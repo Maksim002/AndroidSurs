@@ -7,18 +7,26 @@
 
     <fragment
         android:id="@+id/galleryFragment"
-        android:name="com.example.androidsurs.ui.GalleryFragment"
+        android:name="com.example.androidsurs.ui.gallery.GalleryFragment"
         android:label="Gallery"
-        tools:layout="@layout/fragment_gallery" >
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_scrollFragment2"
+            app:destination="@id/scrollFragment" />
+        <action
+            android:id="@+id/action_galleryFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/webViewFragment"
-        android:name="com.example.androidsurs.ui.WebViewFragment"
-        android:label="Gallery"
-        tools:layout="@layout/fragment_web_view" >
-        <action
-            android:id="@+id/action_webViewFragment_to_galleryFragment"
-            app:destination="@id/galleryFragment" />
-    </fragment>
+        android:name="com.example.androidsurs.ui.web.WebViewFragment"
+        android:label="Installing Android Studio"
+        tools:layout="@layout/fragment_web_view"/>
+
+    <fragment
+        android:id="@+id/scrollFragment"
+        android:name="com.example.androidsurs.ui.scrollVertical.ScrollVertical"
+        android:label="Scroll Vertical"
+        tools:layout="@layout/fragment_scroll_vertical"/>
 </navigation>

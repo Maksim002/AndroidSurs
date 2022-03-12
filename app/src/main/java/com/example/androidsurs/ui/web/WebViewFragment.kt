@@ -1,4 +1,4 @@
-package com.example.androidsurs.ui
+package com.example.androidsurs.ui.web
 
 import android.annotation.SuppressLint
 import android.os.Bundle
