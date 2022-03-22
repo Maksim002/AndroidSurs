@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.androidsurs.R
 import com.example.androidsurs.base.BaseFragment
+import com.pddstudio.highlightjs.models.Theme
+import kotlinx.android.synthetic.main.fragment_code_scroll.*
 
 class CodeScrollFragment : BaseFragment() {
 
@@ -19,5 +21,9 @@ class CodeScrollFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        highlightView.theme = Theme.ANDROID_STUDIO
+        highlightView.highlightLanguage = com.pddstudio.highlightjs.models.Language.AUTO_DETECT
+        highlightView.setSource("wdwdwd")
     }
 }
