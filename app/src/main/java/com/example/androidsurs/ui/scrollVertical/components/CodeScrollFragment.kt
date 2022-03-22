@@ -25,5 +25,6 @@ class CodeScrollFragment : BaseFragment() {
         highlightView.theme = Theme.ANDROID_STUDIO
         highlightView.highlightLanguage = com.pddstudio.highlightjs.models.Language.AUTO_DETECT
         highlightView.setSource("wdwdwd")
+
     }
 }
